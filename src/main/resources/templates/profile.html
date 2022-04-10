@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>CodeByMe</title>
+<!-- Favicon-->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+	crossorigin="anonymous"></script>
+<!-- Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+	rel="stylesheet" type="text/css" />
+<link
+	href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+	rel="stylesheet" type="text/css" />
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="css/index-styles.css" rel="stylesheet" />
+<link type="text/css" href="css/profile.css" rel="stylesheet" />
+<link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="/css/Thongtin.css" />
+	
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/aos@2.3.1/dist/aos.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
+</head>
+<body id="page-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="/home">HOME</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+					
+				</ul>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item mx-0 mx-lg-1"><a
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Home</a></li>
+					<li class="nav-item mx-0 mx-lg-1"><a
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">PROFILE ME</a></li>
+					<li class="nav-item mx-0 mx-lg-1"><a
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="/codebyme">CODE BY ME</a></li>
+					<li class="nav-item mx-0 mx-lg-1"><a
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="/login">Logout</a></li>					
+					<li class="nav-item mx-0 mx-lg-1"><a
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="/login"><span th:text="${userLogin}"></span></a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Masthead-->
+	<header class="masthead bg-primary text-white text-center">
+		<div class="container d-flex align-items-center flex-column">
+			<!-- Masthead Avatar Image-->
+			<img class="masthead-avatar mb-5" src="images/img.pn78999.png"
+				alt="Avatar" style="border-radius: 50%" />
+			<!-- Masthead Heading-->
+			<h1 class="masthead-heading text-uppercase mb-0">Welcome To Unique Developer</h1>
+			<!-- Icon Divider-->
+			<div class="divider-custom divider-light">
+				<div class="divider-custom-line"></div>
+				<div class="divider-custom-icon">
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="divider-custom-line"></div>
+			</div>
+			<!-- Masthead Subheading-->
+			<p class="masthead-subheading font-weight-light mb-0">Java
+				Development - Web Development - Python</p>
+		</div>
+	</header>
+	<!-- <th><p><span th:text="${masv}"></span></p></th>
+	<th><p><span th:text="${trangthai}"></span></p></th> -->
+	<!-- Portfolio Section-->
+	<section>
+ 
+  <div id="tt_01" class="frame112-container">
+    <div class="frame112-frame112">
+      <div class="frame112-ttcoban15">
+        <span class="frame112-text">
+          <span class="frame112-text01">Thông tin cơ bản</span>
+        </span>
+      </div>
+      <div class="frame112-ttsv326">
+        <span class="frame112-text02">
+          <span class="frame112-text03" th:text="${masv}">Mã SV :</span>
+        </span>
+        <div class="frame112-tt01">
+          <span class="frame112-text04">
+            <span class="frame112-text05" th:text="${trangthai}">Trạng thái:</span>
+          </span>
+          <span class="frame112-text06">
+            <span class="frame112-text07" th:text="${ngayvaotruong}">Ngày vào trường</span>
+          </span>
+          <span class="frame112-text08">
+            <span class="frame112-text09" th:text="${khoadt}">Khóa</span>
+          </span>
+          <span class="frame112-text10">
+            <span class="frame112-text11" th:text="${bacdaotao}">Bậc đào tạo</span>
+          </span>
+          <span class="frame112-text12">
+            <span class="frame112-text13" th:text="${nganh}">Ngành</span>
+          </span>
+          <span class="frame112-text14">
+            <span class="frame112-text15" th:text="${khoa}">Khoa</span>
+          </span>
+          <span class="frame112-text16">
+            <span class="frame112-text17" th:text="${chucvu}">Chức vụ</span>
+          </span>
+        </div>
+        <div class="frame112-tt02">
+          <span class="frame112-text18">
+            <span class="frame112-text19" th:text="${mahoso}">Mã hồ sơ</span>
+          </span>
+          <span class="frame112-text20">
+            <span class="frame112-text21" th:text="${coso}">Cơ sở</span>
+          </span>
+          <span class="frame112-text22">
+            <span class="frame112-text23" th:text="${gioitinh}">Giới tính:</span>
+          </span>
+          <span class="frame112-text24">
+            <span class="frame112-text25" th:text="${loaihinhdt}">Loại hình đào tạo</span>
+          </span>
+          <span class="frame112-text26">
+            <span class="frame112-text27" th:text="${chuyennganh}">Chuyên ngành</span>
+          </span>
+          <span class="frame112-text28">
+            <span class="frame112-text29" th:text="${lop}">Lớp</span>
+          </span>
+          <span class="frame112-text30">
+            <span class="frame112-text31" th:text="${congtacdoan}">Công tác đoàn</span>
+          </span>
+        </div>
+        <img
+          alt="Rectangle4324"
+          src="/playground_assets/rectangle4324-sxso-200w.png"
+          class="frame112-image"
+        />
+      </div>
+    </div>
+  </div>
+      <div class="thongtin-cover-block ">
+        <h4 class="thongtin-highlights16 ">Thông tin học tập</h4>
+      </div>
+      
+      <a href="/user/search">Search</a>
+	</section>
+	
+	<!-- Footer-->
+	<footer class="footer text-center">
+		<div class="container">
+			<div class="row">
+				<!-- Footer Location-->
+				<div class="col-lg-4 mb-5 mb-lg-0">
+					<h4 class="text-uppercase mb-4">Location</h4>
+					<p class="lead mb-0">
+						144 Cum 6 - TanLap <br /> Dan Phuong - Ha Noi
+					</p>
+				</div>
+				<!-- Footer Social Icons-->
+				<div class="col-lg-4 mb-5 mb-lg-0">
+					<h4 class="text-uppercase mb-4">Around the Web</h4>
+					<a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/profile.php?id=100006517714459"><i
+						class="fab fa-fw fa-facebook-f"></i></a> <a
+						class="btn btn-outline-light btn-social mx-1" href="#!"><i
+						class="fab fa-fw fa-twitter"></i></a> <a
+						class="btn btn-outline-light btn-social mx-1" href="#!"><i
+						class="fab fa-fw fa-linkedin-in"></i></a> <a
+						class="btn btn-outline-light btn-social mx-1" href="#!"><i
+						class="fab fa-fw fa-dribbble"></i></a>
+				</div>
+				<!-- Footer About Text-->
+				<div class="col-lg-4">
+					<h4 class="text-uppercase mb-4">About Freelancer</h4>
+					<p class="lead mb-0">
+						Freelance is a free to use, MIT licensed Bootstrap theme created
+						by <a href="http://startbootstrap.com">Start Bootstrap</a> .
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Copyright Section-->
+	<div class="copyright py-4 text-center text-white">
+		<div class="container">
+			<small>Copyright &copy; Your Website 2021</small>
+		</div>
+	</div>
+	
+<!-- Bootstrap core JS-->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Core theme JS-->
+	<script src="js/scripts.js"></script>
+	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+	<!-- * *                               SB Forms JS                               * *-->
+	<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
